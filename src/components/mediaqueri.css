@@ -1,0 +1,57 @@
+/* ======================================laptop */
+@media screen and (min-width: 769px) {
+  .menu__item {
+    font-size: 20px;
+  }
+  .navbar__logo-text {
+    font-size: 22px;
+  }
+  .navbar__logo-ikon {
+    font-size: 50px;
+  }
+}
+/* ================================tablet */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .hamburger__menu {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+/* ================================mobile */
+@media screen and (max-width: 426px) {
+  .hamburger__menu {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+  .navbar__logo-text {
+    font-size: 20px;
+  }
+  .navbar__logo-ikon {
+    font-size: 40px;
+  }
+  .line__menu {
+    width: 28px;
+    height: 4px;
+  }
+  .line__menu::before {
+    top: -9px;
+    width: 28px;
+    height: 4px;
+  }
+  .line__menu::after {
+    width: 28px;
+    height: 4px;
+    top: 9px;
+  }
+  .line__menu-open::before {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .line__menu-open::after {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
